@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				let flag=0;
+				$("#hide").mouseenter(function(){
+					if(flag==0){
+						$("#center img").fadeOut(2000);
+						flag=flag+1;
+						$("#hide").text("Show");
+					}
+					else{
+						$("#center img").fadeIn(2000);
+						flag=0;
+						$("#hide").text("Hide");
+
+					}
+				});
+			});
+
+		</script>
+
+
+	</head>
+	<body>
+	<div id="navigation" class="navbar ">
+		<img src="images/logo.jpg" alt="company_name_logo">
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="">About Us</a></li>
+			<li><a href="contactus.html">Contact Us</a></li>
+			<li><a href="#" id="hide">Hide</a></li>
+
+		</ul>
+</div>
+<div id="center" >
+
+		<img src="images/center.jpg" alt="company_name_center">
+</div>
+
+
+	</body>
+</html>
